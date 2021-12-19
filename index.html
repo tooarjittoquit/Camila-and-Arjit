@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <main class="playlist-card">
+
+        <div class="playlist-info">
+            <img src="images/Album Cover -sqaure.jpg" alt="Album Cover">
+            <div class="playlist-text">
+                <h1>Study Beats</h1>
+                <p>Curated to make you feel easy and get you recharged while you study or work. This one comes straight from pixaby.</p>
+            </div>
+        </div>
+        </div>
+
+
+
+        <ul class="playlist" id="audioPlaylist">
+                <li class="track" 
+                data-src="./music/let-it-go.mp3"
+                data-name="Let it go"
+                data-artist="ItsWatR">
+                    <img class="track-image" src="images/track1.jpg" alt="track1">
+                    <h3>Let it go</h3>
+                    <h4>ItsWatR</h4>
+                </li>
+            
+                <li class="track" 
+                data-src="./music/for-me.mp3"
+                data-name="For me"
+                data-artist="BeCorbal">
+                    <img class="track-image" src="images/track2.jpg" alt="track1">
+                    <h3>For me</h3>
+                    <h4>BeCorbal</h4>
+                </li>
+                
+                <li class="track" 
+                data-src="./music/motivational-inspiring-piano.mp3"
+                data-name="Motivational Piano"
+                data-artist="ZakharValaha">
+                    <img class="track-image" src="images/track3.jpg" alt="track1">
+                    <h3>Motivational Piano</h3>
+                    <h4>ZakharValaha</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/wataboi-flavour.mp3"
+                data-name="Wataboi Flavour"
+                data-artist="ItsWatR">
+                    <img class="track-image" src="images/track4.jpg" alt="track1">
+                    <h3>Wataboi Flavour</h3>
+                    <h4>ItsWatR</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/jazzy-abstract-beat.mp3"
+                data-name="Jazzy Abstract"
+                data-artist="Coma Media">
+                    <img class="track-image" src="images/track5.jpg" alt="track1">
+                    <h3>Jazzy Abstract</h3>
+                    <h4>Coma Media</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/just-relax.mp3"
+                data-name="Just Relax"
+                data-artist="Lesfm">
+                    <img class="track-image" src="images/track6.jpg" alt="track1">
+                    <h3>Just Relax</h3>
+                    <h4>Lesfm</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/cinematic-dramatic.mp3"
+                data-name="Cinematic Dramatic"
+                data-artist="AleXZavesa">
+                    <img class="track-image" src="images/track7.jpg" alt="track1">
+                    <h3>Cinematic Dramatic</h3>
+                    <h4>AleXZavesa</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/the-introvert-michael-kobrin.mp3"
+                data-name="The Introvert"
+                data-artist="MichaelKobrin">
+                    <img class="track-image" src="images/track8.jpg" alt="track1">
+                    <h3>The Introvert</h3>
+                    <h4>MichaelKobrin</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/leonell-cassio-the-sapphire-city.mp3"
+                data-name="LeonellCassio"
+                data-artist="LeonellCassio">
+                    <img class="track-image" src="images/track9.jpg" alt="track1">
+                    <h3>Sapphire City</h3>
+                    <h4>LeonellCassio</h4>
+                </li>
+
+                <li class="track" 
+                data-src="./music/melodic-techno.mp3"
+                data-name="Melodic Techno"
+                data-artist="Zen Man">
+                    <img class="track-image" src="images/track10.jpg" alt="track1">
+                    <h3>Melodic Techno</h3>
+                    <h4>Zen Man</h4>
+                </li>
+               
+        </ul>
+
+        <div class="player" id="audioPlayer">
+            <input type="range" min="0" max="1" value="0" step="0.001" class="progress-bar" id="trackProgress">
+            <button class="previous-song" id="playPrev"></button>
+            <button class="play-pause" id="playPause" data-play="" data-pause=""> </button>
+            <button class="next-song" id="playNext"></button>
+            <h2 id="trackName" class="track-name"></h2>
+            <input type="range" name="trackVolume" id="trackVolume" class="track-volume" min="0" max="1" value="0.5" step="0.01" orient="vertical">
+        </div>
+
+    </main>
+
+    <script src="https://juneate.github.io/music-playlist-player/js/script.js" type="module" defer></script>
+</body>
+
+</html>
